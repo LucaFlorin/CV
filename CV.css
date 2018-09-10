@@ -21,10 +21,8 @@ ul{
 
 
 .heading_content{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -70%);
+    width: 100%;
+    top: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -35,7 +33,8 @@ ul{
 .greetings_card{
     background-color: white;
     backface-visibility: hidden;
-    width: 550px;
+    position: fixed;
+    width: 100%;
     height: 140px;
     display: flex;
     justify-content: center;
@@ -57,14 +56,23 @@ ul{
 }
 
 .greetings_card span:nth-child(2){
+    font-weight: 600;
     letter-spacing: -2px;
     color: #60C16F;
     font-size: 64px;
 
 }
 
+.navigation_container{
+    padding-top: 200px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navigation_arrow{
-    margin-top: 100px;
     width: 110px;
     height: 110px;
     border: 3px solid white;
@@ -73,6 +81,22 @@ ul{
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
+    animation-name: bounce;
+    animation-duration: .3s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+    from{
+        margin-top: 10px;
+    }
+
+    to{
+        margin-top: 15px;
+    }
 }
 
 .navigation_arrow i{
@@ -82,5 +106,124 @@ ul{
 }
 
 .greetings_card_active{
-    transition: .6s ease-in-out;
+    perspective: 1000px;
+    transition: 1.2s ease-in-out;
+    transform: rotateX(180deg);
+    height: 0;
+
 }
+
+.greetings_text_active{
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease-in-out;
+}
+
+
+
+.greetings_card2{
+    transition-delay: .2s;
+    transition-timing-function: ease-in-out;
+    background-color: white;
+    backface-visibility: hidden;
+    width: 550px;
+    height: 0;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+.greetings_card2 span:nth-child(1){
+    right: 10px;
+    top: 10px;
+    color: #60C16F;
+    font-size: 20px;
+    cursor: pointer;
+
+
+}
+
+.greetings_card2 span:nth-child(2){
+    letter-spacing: -2px;
+    color: #60C16F;
+    font-size: 30px;
+
+}
+
+.greetings_card2_active{
+    height: 120px;
+    transition-delay: .4s;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+}
+
+.greetings_text2{
+    opacity: 0;
+    visibility: hidden;
+    transition: 1.2s ease-in-out;
+    padding-top: 30px;
+    
+}
+
+.button2{
+    opacity: 0;
+    visibility: hidden;
+    transition: 1.2s ease-in-out;
+}
+
+
+.greetings_text2_active{
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+
+.button2_active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.flipper{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+
+.navbar_active{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+
+.center_list{
+    display: flex;
+}
+
+.list_item{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #60C16F;
+    margin-right: 10px;
+    position: relative;
+}
+
+.item_text0{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.bulk{
+    height: 100vh;
+    width: 100%;
+}
+
