@@ -35,24 +35,68 @@ body{
     position: fixed;
     left: 200px;
     top: 400px;
+    animation-name: hovering;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
   
 }
 
+@keyframes hovering{
+    0%{
+        top: 400px;
+        left: 200px;
+    }
 
+    50%{
+        top: 350px;
+        left: 220px;
+    }
+
+    100%{
+        top: 0;
+        left: 202px;
+    }
+}
 
 
 .bubble2{
     position: fixed;
     right: 100px;
     top: 400px;
-    
-
+    animation-name: hovering2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+  
 }
+
+@keyframes hovering2{
+    0%{
+        top: 400px;
+        right: 200px;
+    }
+
+    50%{
+        top: 350px;
+        right: 220px;
+    }
+
+    100%{
+        top: 390px;
+        right: 202px;
+    }
+}
+
+
 
 .pop{
     width: 50%;
     top: 0;
     left: 0;
+    animation-play-state: paused;
     border-radius: 0;
     position: fixed;
     height: 100px;
@@ -60,23 +104,11 @@ body{
    border: none;
    opacity: 1;
    visibility: visible;
-   animation-play-state: paused;
-}
-
-
-@keyframes hovering{
-    0%{
-
-    }
-
-    50%{
    
-    }
-
-    100%{
-
-    }
 }
+
+
+
 
 
 
