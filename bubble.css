@@ -35,29 +35,7 @@ body{
     position: fixed;
     left: 200px;
     top: 400px;
-    animation-name: hovering;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
-  
-}
-
-@keyframes hovering{
-    0%{
-        top: 400px;
-        left: 200px;
-    }
-
-    50%{
-        top: 350px;
-        left: 220px;
-    }
-
-    100%{
-        top: 0;
-        left: 202px;
-    }
+    transition: 1s ease-in-out;
 }
 
 
@@ -65,29 +43,8 @@ body{
     position: fixed;
     right: 100px;
     top: 400px;
-    animation-name: hovering2;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-  
-}
+    transition: 1s ease-in-out;
 
-@keyframes hovering2{
-    0%{
-        top: 400px;
-        right: 200px;
-    }
-
-    50%{
-        top: 350px;
-        right: 220px;
-    }
-
-    100%{
-        top: 390px;
-        right: 202px;
-    }
 }
 
 
