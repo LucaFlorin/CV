@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(100, 247, 154);
+    position: relative;
+    background-size: cover;
+}
+
+.bubbles{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.bubble_container{
+    width: 100%;
+    position: relative;
+}
+
+.bubble{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    
+}
+
+.bubble1{
+    position: fixed;
+    left: 200px;
+    top: 400px;
+  
+}
+
+
+
+
+.bubble2{
+    position: fixed;
+    right: 100px;
+    top: 400px;
+    
+
+}
+
+.pop{
+    width: 50%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    position: fixed;
+    height: 100px;
+    transition: 1s ease-in-out;
+   border: none;
+   opacity: 1;
+   visibility: visible;
+   animation-play-state: paused;
+}
+
+
+@keyframes hovering{
+    0%{
+
+    }
+
+    50%{
+   
+    }
+
+    100%{
+
+    }
+}
+
+
+
+.pop2{
+    width: 50%;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 0;
+    position: fixed;
+    height: 100px;
+   transition: 1s ease-in-out;
+   animation-play-state: paused;
+
+
+}
+
+.bulk{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.pop_content{
+    display: none;
+    width: 100%;
+}
+
+
+.pop_content2{
+    display: none;
+    width: 100%;
+}
+
+.pop_inner{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.left{
+    font-weight: 600;
+    font-size: 40px;
+    width: 33.33%;
+    height: 100px;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.middle{
+    font-weight: 600;
+    font-size: 40px;
+    width: 33.43%;
+    height: 100px;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.right{
+    font-weight: 600;
+    font-size: 40px;
+    width: 33.33%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
