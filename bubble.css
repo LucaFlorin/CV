@@ -28,16 +28,45 @@ body{
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid white;
+    z-index: 100;
     
 }
 
 .bubble1{
+    display: flex;
+    justify-content: center;
     position: fixed;
     left: 200px;
     top: 400px;
     transition: 1s ease-in-out;
 }
 
+
+.title{
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.side_pannel1{
+    height: 100%;
+    width: 150px;
+    background-color: rgba(255, 218, 185, 1);
+    border: 1px solid rgba(95, 158, 160, 1);
+    border-radius: 2px;
+    left: 0;
+    top: 0;
+    background-image: url(/CV/assets/image1.jpg);
+    background-size: cover; 
+    background-position: left 5px bottom;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .bubble2{
     position: fixed;
@@ -47,6 +76,21 @@ body{
 
 }
 
+
+.side_pannel2{
+    height: 100%;
+    width: 150px;
+    background-color:  rgba(255, 218, 185, 1);
+    border: 1px solid rgba(95, 158, 160, 1);
+    border-radius: 2px;
+    right: 0;
+    top: 0;
+    background-image: url(/CV/assets/image1.jpg);
+    background-size: cover;
+    background-position: right 5px bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 
 .pop{
@@ -146,3 +190,83 @@ body{
     align-content: center;
     align-items: center;
 }
+
+.nav_arrow{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow_icon{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgba(255, 218, 185, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: pulse2;
+    animation-delay: 2.5s;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    
+}
+
+
+
+
+@keyframes pulse2 {
+	0%{
+	
+		box-shadow: 0px 0px 0px 0px rgba(255, 218, 185, 1);
+	}
+	
+	100%{
+		
+			box-shadow: 0px 0px 0px 30px rgba(255, 218, 185, 0);
+	}
+}
+
+
+.arrow_icon i{  
+    font-size: 30px;
+    color: rgba(255, 218, 185, 1);
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 158, 160, 1);
+    width: 50px;
+    height: 50px;
+    animation: pulse 2.5s linear infinite;
+    position: absolute;
+    
+
+
+}
+
+
+@keyframes pulse {
+	0%{
+	
+		box-shadow: 0px 0px 0px 0px rgba(95, 158, 160, 1);
+	}
+	
+	100%{
+		
+			box-shadow: 0px 0px 0px 26px rgba(95, 158, 160, 0);
+	}
+}
+
+.animation_arrow{
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
