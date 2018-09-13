@@ -9,6 +9,12 @@ body{
     background-color: rgb(100, 247, 154);
     position: relative;
     background-size: cover;
+    transition: .8s ease-in-out;
+}
+
+
+.wrapper_active{
+    background: rgba(95, 158, 160, 1);
 }
 
 .bubbles{
@@ -243,6 +249,7 @@ body{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     cursor: pointer;
+    transition: 1s ease-in-out;
     
 }
 
@@ -274,6 +281,7 @@ body{
     height: 50px;
     animation: pulse 2.5s linear infinite;
     position: absolute;
+    transition: 1s ease-in-out;
     
 
 
@@ -308,6 +316,7 @@ body{
 .middle_active{
     background-color: black;
     margin-left: 253px;
+    transition: 1s ease-in-out;
 }
 
 .right_active{
@@ -315,6 +324,7 @@ body{
     text-align: center;
     z-index: 200;
     margin-left: 0;
+    transition: 1s ease-in-out;
 }
 
 

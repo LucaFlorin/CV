@@ -14,6 +14,7 @@ $(document).ready(function(){
         $('.middle').toggleClass('middle_active');
         $('.right').toggleClass('right_active');
         $('.right2').toggleClass('right_active');
+        $('.wrapper').toggleClass('wrapper_active');
     });
 
 
